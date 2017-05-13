@@ -78,3 +78,4 @@ echo -e "$x  $y "
 
 #FINAL --> Limpia color:
 echo -e "$LIMPIAR"
+exit 0
