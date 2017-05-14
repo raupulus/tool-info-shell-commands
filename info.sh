@@ -11,7 +11,7 @@
 ############################
 ##   Constantes Colores   ##
 ############################
-amarillo="\033[1;33m"
+AMARILLO="\033[1;33m"
 AZUL="\033[1;34m"
 blanco="\033[1;37m"
 cyan="\033[1;36m"
@@ -25,7 +25,7 @@ LIMPIAR="\033[1;00m"
 ##   Variables Generales   ##
 #############################
 x=$VERDE
-y=$ROJO
+y=$AMARILLO
 
 
 
