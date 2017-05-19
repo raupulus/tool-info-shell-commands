@@ -248,9 +248,16 @@ iface eth0 inet dhcp
 
 echo ""
 echo ""
-echo -e "$x RED CON IFCONFIG $y"
+echo -e "$x FDISK $y"
 echo -e '
+fdisk /dev/sdb
 
+m Muestra la ayuda
+p Muestra la tabla de particiones
+n Crea una nueva partición
+d Elimina una partición
+q Salir sin guardar los cambios
+w Guardar la partición, los cambios realizados y salir
 '
 
 
