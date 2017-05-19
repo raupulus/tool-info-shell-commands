@@ -263,18 +263,23 @@ w Guardar la partición, los cambios realizados y salir
 
 echo ""
 echo ""
-echo -e "$x RED CON IFCONFIG $y"
+echo -e "$x FORMATEAR EXT4 $y"
 echo -e '
-
+Partición en formato ext4
+mkfs -t ext4 /dev/sdb3
 '
 
 
 echo ""
 echo ""
-echo -e "$x RED CON IFCONFIG $y"
+echo -e "$x CREAR USUARIOS MANUALMENTE $y"
 echo -e '
-
+Editar nueva entrada en /etc/passwd
+Crear el directorio de usuario “mkdir /home/newUser”
+Crear contraseña para el usuario creado en /etc/shadow
 '
+
+
 
 #FINAL --> Limpia color:
 echo -e "$LIMPIAR"
