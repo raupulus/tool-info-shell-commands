@@ -306,9 +306,11 @@ Tiene las mismas opciones que la creación de usuarios
 
 echo ""
 echo ""
-echo -e "$x  $y"
+echo -e "$x ELIMINAR USUARIOS $y"
 echo -e '
+userdel -r usuario
 
+Con el parámetro -r borramos también el directorio home de este
 '
 
 echo ""
