@@ -66,9 +66,12 @@ echo -e "$x at HORA FECHA$y Planifica ejecución de tareas a momento determinado
 echo -e "$x atq$y Muestra las tareas programadas"
 echo -e "$x atrm$y Borra la tarea programada con el comando at"
 echo -e "$x crontab -e$y Permite programar tareas mediante cron"
+echo -e "$x groups$y Muestra los grupos a los que pertenece un usuario"
+echo -e "$x chfn$y Permite a un usuario cambiar su propio campo de configuración"
+echo -e "$x chsh$y Permite al usuario cambiar su propia shell por defecto"
 echo -e "$x $y "
 echo -e "$x $y "
-
+echo -e "$x $y "
 
 echo ""
 echo ""
@@ -321,6 +324,13 @@ addgroup [--group] [-g gid] grupo
 
 Con el parámetro “--group” indicamos que es el grupo del sistema.
 Con “-g” podemos asignar un id específico, en caso contrario tomará el primero libre
+'
+
+echo ""
+echo ""
+echo -e "$x MODIFICAR GRUPO $y"
+echo -e '
+groupmod [-g gid] [-n nombre] grupo
 '
 
 echo ""
