@@ -108,9 +108,12 @@ echo -e '
 -le Menor o igual, viene de “less equal”
 '
 
-echo -e "$x Expresiones condicionales para Cadenas de Carácteres$y"
+echo -e "$x Leer Archivo Línea por línea$y"
 echo -e '
-
+while read line
+do
+	echo “$line”
+done <$1
 '
 
 
