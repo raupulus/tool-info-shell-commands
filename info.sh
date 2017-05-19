@@ -62,6 +62,10 @@ echo -e "$x whereis archivo_ejecutable$y Muestra la ubicación del archivo ejecu
 echo -e "$x touch nombre_archivo$y Crea un nuevo archivo de 0 bytes, si ya existe actualiza la fecha de modificación de este"
 echo -e "$x head -n4 ~/ejemplo$y Muestra las primeras -n líneas pasadas como parámetro (4 en este caso)"
 echo -e "$x tail -n4 ~/ejemplo$y Muestra las últimas -n líneas pasadas como parámetro (4 en este caso)"
+echo -e "$x at HORA FECHA$y Planifica ejecución de tareas a momento determinado"
+echo -e "$x atq$y Muestra las tareas programadas"
+echo -e "$x atrm$y Borra la tarea programada con el comando at"
+echo -e "$x crontab -e$y Permite programar tareas mediante cron"
 echo -e "$x $y "
 echo -e "$x $y "
 echo -e "$x $y "
@@ -70,11 +74,11 @@ echo -e "$x $y "
 echo -e "$x $y "
 echo -e "$x $y "
 echo -e "$x $y "
-echo -e "$x $y "
-echo -e "$x $y "
-echo -e "$x $y "
-echo -e "$x $y "
-echo -e "$x $y "
+
+
+
+
+echo -e "$x crontab -e$y minutos	hora	dia	mes	dia de la semana	usuario		comando"
 echo -e "$x $y "
 echo -e "$x $y "
 echo -e "$x $y "
