@@ -315,9 +315,12 @@ Con el parámetro -r borramos también el directorio home de este
 
 echo ""
 echo ""
-echo -e "$x  $y"
+echo -e "$x Agregar Grupo $y"
 echo -e '
+addgroup [--group] [-g gid] grupo
 
+Con el parámetro “--group” indicamos que es el grupo del sistema.
+Con “-g” podemos asignar un id específico, en caso contrario tomará el primero libre
 '
 
 echo ""
