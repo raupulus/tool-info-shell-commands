@@ -295,6 +295,36 @@ useradd -d /home/usuario2 -m -g usuarios -s /bin/bash usuario2
 -m → Crea el directorio home asignado con la opción -d
 '
 
+echo ""
+echo ""
+echo -e "$x Modificar Usuarios $y"
+echo -e '
+usermod [opciones] usuario
+
+Tiene las mismas opciones que la creación de usuarios
+'
+
+echo ""
+echo ""
+echo -e "$x  $y"
+echo -e '
+
+'
+
+echo ""
+echo ""
+echo -e "$x  $y"
+echo -e '
+
+'
+
+echo ""
+echo ""
+echo -e "$x  $y"
+echo -e '
+
+'
+
 #FINAL --> Limpia color:
 echo -e "$LIMPIAR"
 
