@@ -279,7 +279,21 @@ Crear el directorio de usuario “mkdir /home/newUser”
 Crear contraseña para el usuario creado en /etc/shadow
 '
 
+echo ""
+echo ""
+echo -e "$x CREAR USUARIOS COMANDO $y"
+echo -e '
+useradd -d /home/usuario2 -m -g usuarios -s /bin/bash usuario2
 
+-c → Descripción del usuario
+-d → Directorio home (no lo crea, debe existir)
+-e → Fecha de caducidad de la cuenta
+-g → Grupo por defecto (no lo crea, debe existir)
+-G → Otros grupos a los que pertenecerá a parte del principal
+-s → Shell que usará (/bin/bash)
+-u → Identificador del usuario (ID)
+-m → Crea el directorio home asignado con la opción -d
+'
 
 #FINAL --> Limpia color:
 echo -e "$LIMPIAR"
