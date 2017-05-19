@@ -203,14 +203,16 @@ echo -e '
 
 tar -cvzf comprimir.tgz ficheros..  Comprime y empaqueta todos los ficheros pasados
 tar -xvzf fichero.tgz  Descomprime los ficheros empaquetados y comprimidos
-
 '
 
 echo ""
 echo ""
-echo -e "$x $y"
+echo -e "$x RED CON IFCONFIG $y"
 echo -e '
-
+Asignar IP ifconfig eth0 192.168.0.2
+Cambiar mascara de subred ifconfig eth0 netmask 255.255.255.0
+Cambiar dirección de broadcast ifconfig eth0 broadcast 192.168.0.255
+Asignar IP, mascara y broadcast Ifconfig eth0 192.168.9.2 netmask 255.255.255.0 broadcast 192.168.0.255
 '
 
 
