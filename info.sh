@@ -68,16 +68,10 @@ echo -e "$x atrm$y Borra la tarea programada con el comando at"
 echo -e "$x crontab -e$y Permite programar tareas mediante cron"
 echo -e "$x $y "
 echo -e "$x $y "
-echo -e "$x $y "
-echo -e "$x $y "
-echo -e "$x $y "
-echo -e "$x $y "
-echo -e "$x $y "
-echo -e "$x $y "
 
 
-
-
+echo ""
+echo ""
 echo -e "$x crontab -e$y minutos	hora	dia	mes	dia de la semana	usuario		comando"
 echo -e "$x Expresiones condicionales para archivos$y"
 echo '
@@ -90,6 +84,8 @@ echo '
 '
 
 
+echo ""
+echo ""
 echo -e "$x Expresiones condicionales para Cadenas de Carácteres$y"
 echo -e '
 -z “cadena” Verdadero si la longitud es 0
@@ -98,6 +94,8 @@ echo -e '
 “cadena1” != “cadena2” Verdadero si las cadenas no son iguales
 '
 
+echo ""
+echo ""
 echo -e "$x Expresiones condicionales para Operaciones Aritméticas$y"
 echo -e '
 -eq Igual, viene de “equal”
@@ -108,6 +106,8 @@ echo -e '
 -le Menor o igual, viene de “less equal”
 '
 
+echo ""
+echo ""
 echo -e "$x Leer Archivo Línea por línea$y"
 echo -e '
 while read line
@@ -116,6 +116,8 @@ do
 done <$1
 '
 
+echo ""
+echo ""
 echo -e "$x CAMBIAR IFS$y"
 echo -e '
 La variable IFS contiene el valor del campo por el cual separará un bucle como el for
@@ -130,6 +132,8 @@ done
 IFS=$FSanterior #Reestablece la variable IFS a su valor original
 '
 
+echo ""
+echo ""
 echo -e "$x GREP$y"
 echo -e '
 -c En lugar de imprimir las líneas que coinciden, muestra el número de líneas que coinciden.
@@ -152,59 +156,30 @@ $ El final de una línea de texto
 .* Cero o más apariciones de cualquier carácter único
 \ Ignora el significado especial del próximo carácter
 '
+echo ""
+echo ""
+echo -e "$x FIND $y"
+echo -e '
 
+'
+
+echo ""
+echo ""
 echo -e "$x $y"
 echo -e '
 
 '
 
+echo ""
+echo ""
 echo -e "$x $y"
 echo -e '
 
 '
 
-echo -e "$x $y"
-echo -e '
 
-'
-
-
-echo -e "$x $y "
-echo -e "$x $y "
-echo -e "$x $y "
-echo -e "$x $y "
-echo -e "$x $y "
-echo -e "$x $y "
-echo -e "$x $y "
-echo -e "$x $y "
-echo -e "$x $y "
-echo -e "$x $y "
-echo -e "$x $y "
-echo -e "$x $y "
-echo -e "$x $y "
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+echo ""
+echo ""
 
 
 #FINAL --> Limpia color:
