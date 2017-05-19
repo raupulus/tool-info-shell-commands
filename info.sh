@@ -79,7 +79,7 @@ echo -e "$x $y "
 
 
 echo -e "$x crontab -e$y minutos	hora	dia	mes	dia de la semana	usuario		comando"
-echo -e "$x Expresiones condicionales para archivos"
+echo -e "$x Expresiones condicionales para archivos$y"
 echo '
 -r <fichero> Es verdadero si existe y se puede leer
 -w <fichero> Es verdadero si existe y se puede escribir
@@ -90,12 +90,20 @@ echo '
 '
 
 
-echo -e "$x Expresiones condicionales para Cadenas de Carácteres"
+echo -e "$x Expresiones condicionales para Cadenas de Carácteres$y"
 echo -e '
-
+-z “cadena” Verdadero si la longitud es 0
+-n “cadena” Verdadero si la longitud no es 0
+“cadena1” = “cadena2” Verdadero si las cadenas son iguales
+“cadena1” != “cadena2” Verdadero si las cadenas no son iguales
 '
 
 
+
+echo -e "$x Expresiones condicionales para Cadenas de Carácteres$y"
+echo -e '
+
+'
 
 
 
