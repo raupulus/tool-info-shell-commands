@@ -235,9 +235,14 @@ dns-nameservers 8.8.8.8
 
 echo ""
 echo ""
-echo -e "$x RED CON IFCONFIG $y"
+echo -e "$x RED DHCP PERMANENTE $y"
 echo -e '
+Editar archivo /etc/network/interfaces
+nano /etc/network/interfaces
 
+Una vez dentro de este archivo dejamos la configuración siguiendo esta estructura:
+auto eth0
+iface eth0 inet dhcp
 '
 
 
