@@ -98,7 +98,15 @@ echo -e '
 “cadena1” != “cadena2” Verdadero si las cadenas no son iguales
 '
 
-
+echo -e "$x Expresiones condicionales para Operaciones Aritméticas$y"
+echo -e '
+-eq Igual, viene de “equal”
+-ne Distinto, viene de “not equal”
+-gt Mayor que, viene de “bigger than”
+-lt Menor que, viene de “less than”
+-ge Mayor o igual, viene de “bigger equal”
+-le Menor o igual, viene de “less equal”
+'
 
 echo -e "$x Expresiones condicionales para Cadenas de Carácteres$y"
 echo -e '
