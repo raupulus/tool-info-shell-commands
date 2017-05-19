@@ -116,7 +116,39 @@ do
 done <$1
 '
 
+echo -e "$x CAMBIAR IFS$y"
+echo -e '
+La variable IFS contiene el valor del campo por el cual separará un bucle como el for
 
+IFSanterior=$IFS
+IFS=$'\n'
+
+for i in `cat $1`
+do
+	echo $i
+done
+IFS=$FSanterior #Reestablece la variable IFS a su valor original
+'
+
+echo -e "$x $y"
+echo -e '
+
+'
+
+echo -e "$x $y"
+echo -e '
+
+'
+
+echo -e "$x $y"
+echo -e '
+
+'
+
+echo -e "$x $y"
+echo -e '
+
+'
 
 
 echo -e "$x $y "
