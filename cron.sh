@@ -8,7 +8,7 @@
 # ###       www.fryntiz.es        ### #
 #######################################
 
-function cron() {
+function Xcron() {
 	echo ""
 	echo -e "$x crontab -e$y minutos	hora	dia	mes	dia de la semana	usuario		comando"
 	echo -e "$x Expresiones condicionales para archivos$y"
