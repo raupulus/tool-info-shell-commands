@@ -31,6 +31,7 @@ echo -e "$AZUL Comandos básicos de BASH$LIMPIAR"
 
 #function ayuda() {
 	#Información sobre el uso del comando
+	echo ""
 #}
 
 if [ $# -eq 0 ] -o [ $# -gt 1 ]; then
@@ -38,30 +39,30 @@ if [ $# -eq 0 ] -o [ $# -gt 1 ]; then
 elif [ $1 -eq "info"]; then
 	source ./info.sh
 	Xinfo
-elif [ $1 -eq "info"]; then
+elif [ $1 -eq "grep"]; then
 	source ./grep.sh
-Xgrep
-elif [ $1 -eq "info"]; then
-source ./comprimir.sh
-Xcomprimir
-elif [ $1 -eq "info"]; then
-source ./red.sh
-Xred
-elif [ $1 -eq "info"]; then
-source ./buscar.sh
-Xfind
-elif [ $1 -eq "info"]; then
-source ./formatear.sh
-Xformatear
-elif [ $1 -eq "info"]; then
-source ./usuarios.sh
-Xusuarios
-elif [ $1 -eq "info"]; then
-source ./cron.sh
-Xcron
-elif [ $1 -eq "info"]; then
-source ./otros.sh
-Xotros
+	Xgrep
+elif [ $1 -eq "comprimir"]; then
+	source ./comprimir.sh
+	Xcomprimir
+elif [ $1 -eq "red"]; then
+	source ./red.sh
+	Xred
+elif [ $1 -eq "buscar"]; then
+	source ./buscar.sh
+	Xfind
+elif [ $1 -eq "formatear"]; then
+	source ./formatear.sh
+	Xformatear
+elif [ $1 -eq "usuarios"]; then
+	source ./usuarios.sh
+	Xusuarios
+elif [ $1 -eq "cron"]; then
+	source ./cron.sh
+	Xcron
+elif [ $1 -eq "otros"]; then
+	source ./otros.sh
+	Xotros
 else
 	Xayuda
 fi
