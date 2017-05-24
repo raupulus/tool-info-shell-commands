@@ -31,9 +31,11 @@ y=$AMARILLO
 #Mas de 1 parámetro mostrar ayuda
 #Con 0 parámetros mostrar comandos básicos
 
-function ayuda() {
+#function ayuda() {
 	#Información sobre el uso del comando
-}
+#}
+
+echo -e "$AZUL Comandos básicos de BASH$LIMPIAR"
 
 echo ""
 echo ""
