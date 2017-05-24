@@ -27,22 +27,35 @@ LIMPIAR="\033[1;00m"
 x=$VERDE
 y=$AMARILLO
 
-#Comprobar si tiene solo 1 parámetro pasado.
-#Mas de 1 parámetro mostrar ayuda
-#Con 0 parámetros mostrar comandos básicos
-
 #function ayuda() {
 	#Información sobre el uso del comando
 #}
 
+if [ $# -eq 0 ] -o [ $# -gt 1 ]; then
+	#Xayuda
+elif [ $1 -eq "info"]; then
+
+elif [ $1 -eq "info"]; then
+
+elif [ $1 -eq "info"]; then
+
+elif [ $1 -eq "info"]; then
+
+elif [ $1 -eq "info"]; then
+
+elif [ $1 -eq "info"]; then
+
+elif [ $1 -eq "info"]; then
+
+elif [ $1 -eq "info"]; then
+
+elif [ $1 -eq "info"]; then
+
+#Comprobar si tiene solo 1 parámetro pasado.
+#Mas de 1 parámetro mostrar ayuda
+#Con 0 parámetros mostrar comandos básicos
+
 echo -e "$AZUL Comandos básicos de BASH$LIMPIAR"
-
-echo ""
-echo ""
-echo -e "$x  $y"
-echo -e '
-
-'
 
 source ./info.sh
 Xinfo
@@ -70,6 +83,13 @@ Xcron
 
 source ./otros.sh
 Xotros
+
+echo ""
+echo ""
+echo -e "$x  $y"
+echo -e '
+
+'
 
 #FINAL --> Limpia color:
 echo -e "$LIMPIAR"
