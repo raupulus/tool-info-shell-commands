@@ -11,6 +11,12 @@
 #El instalador está pendiente de ser revisado
 #No se garantiza su funcionamiento actualmente
 
+
+####Antes de nada:
+# sudo apt-get update
+# sudo apt-get install xterm git??????????
+
+
 ####FORMA 1 --> Extrayendo desde GIT con "git clone"
 # mkdir /tmp/amigoScript
 # cd /tmp/amigoScript
