@@ -27,18 +27,13 @@ LIMPIAR="\033[1;00m"
 x=$VERDE
 y=$AMARILLO
 
-
 #Comprobar si tiene solo 1 parámetro pasado.
 #Mas de 1 parámetro mostrar ayuda
 #Con 0 parámetros mostrar comandos básicos
 
-
-
-
-#############################
-##         BÁSICOS         ##
-#############################
-
+function ayuda() {
+	#Información sobre el uso del comando
+}
 
 echo ""
 echo ""
