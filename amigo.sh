@@ -31,19 +31,23 @@ echo -e "$AZUL Comandos básicos de BASH$LIMPIAR"
 
 #Información sobre el uso del comando
 function Xayuda() {
-	echo -e "$AZUL FORMA DE USAR ESTE COMANDO$LIMPIAR"
+	echo -e "$AZUL FORMA DE USAR ESTE SCRIPT$LIMPIAR"
+	echo ""
 	echo -e "$ROJO $0$VERDE información$LIMPIAR"
 	echo ""
 	echo -e "$magenta Los tipos de información posible son:$LIMPIAR"
-	echo -e "$VERDE  > info$AMARILLO: Información general$LIMPIAR"
-	echo -e "$VERDE  > grep$AMARILLO: Filtrar mediante el comando grep$LIMPIAR"
-	echo -e "$VERDE  > comprimir$AMARILLO: Comprimir y empaquetar archivos y directorios$LIMPIAR"
-	echo -e "$VERDE  > red$AMARILLO: Configuración de Red estática y por DHCP$LIMPIAR"
-	echo -e "$VERDE  > buscar$AMARILLO: Sintaxis básica para el comando find$LIMPIAR"
-	echo -e "$VERDE  > formatear$AMARILLO: Comandos para particionar discos y formatearlos$LIMPIAR"
-	echo -e "$VERDE  > usuarios$AMARILLO: Gestión de usuarios y grupos$LIMPIAR"
-	echo -e "$VERDE  > cron$AMARILLO: Programar tareas mediante crontab -e$LIMPIAR"
-	echo -e "$VERDE  > otros$AMARILLO: Otros comandos y opciones útiles$LIMPIAR"
+	echo -e "$ROJO  >$VERDE info$AMARILLO: Información general$LIMPIAR"
+	echo -e "$ROJO  >$VERDE grep$AMARILLO: Filtrar mediante el comando grep$LIMPIAR"
+	echo -e "$ROJO  >$VERDE comprimir$AMARILLO: Comprimir y empaquetar archivos y directorios$LIMPIAR"
+	echo -e "$ROJO  >$VERDE red$AMARILLO: Configuración de Red estática y por DHCP$LIMPIAR"
+	echo -e "$ROJO  >$VERDE buscar$AMARILLO: Sintaxis básica para el comando find$LIMPIAR"
+	echo -e "$ROJO  >$VERDE formatear$AMARILLO: Comandos para particionar discos y formatearlos$LIMPIAR"
+	echo -e "$ROJO  >$VERDE usuarios$AMARILLO: Gestión de usuarios y grupos$LIMPIAR"
+	echo -e "$ROJO  >$VERDE cron$AMARILLO: Programar tareas mediante crontab -e$LIMPIAR"
+	echo -e "$ROJO  >$VERDE otros$AMARILLO: Otros comandos y opciones útiles$LIMPIAR"
+	echo ""
+	echo -e "$AZUL Ejemplo:"
+	echo -e "       $ROJO sh $0$VERDE info$LIMPIAR"
 }
 
 #Comprobando parámetro de entrada
@@ -80,13 +84,6 @@ elif [ $1 = "otros" ]; then
 else
 	Xayuda
 fi
-
-echo ""
-echo ""
-echo -e "$x  $y"
-echo -e '
-
-'
 
 #FINAL --> Limpia color:
 echo -e "$LIMPIAR"
