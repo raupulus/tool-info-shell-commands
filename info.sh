@@ -9,7 +9,6 @@
 #######################################
 
 function Xinfo() {
-	echo -e "$AZUL Comandos básicos de BASH$LIMPIAR"
 	echo ""
 	echo -e "$x !!$y Repetir último comando"
 	echo -e "$x echo \$SHELL$y Muestra en la pantalla la SHELL que estás usando"
@@ -50,4 +49,4 @@ function Xinfo() {
 	echo -e "$x $y "
 	echo -e "$x $y "
 }
-}
+
