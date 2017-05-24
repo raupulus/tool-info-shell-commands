@@ -27,6 +27,8 @@ LIMPIAR="\033[1;00m"
 x=$VERDE
 y=$AMARILLO
 
+echo -e "$AZUL Comandos básicos de BASH$LIMPIAR"
+
 #function ayuda() {
 	#Información sobre el uso del comando
 #}
@@ -34,55 +36,35 @@ y=$AMARILLO
 if [ $# -eq 0 ] -o [ $# -gt 1 ]; then
 	#Xayuda
 elif [ $1 -eq "info"]; then
-
+	source ./info.sh
+	Xinfo
 elif [ $1 -eq "info"]; then
-
-elif [ $1 -eq "info"]; then
-
-elif [ $1 -eq "info"]; then
-
-elif [ $1 -eq "info"]; then
-
-elif [ $1 -eq "info"]; then
-
-elif [ $1 -eq "info"]; then
-
-elif [ $1 -eq "info"]; then
-
-elif [ $1 -eq "info"]; then
-
-#Comprobar si tiene solo 1 parámetro pasado.
-#Mas de 1 parámetro mostrar ayuda
-#Con 0 parámetros mostrar comandos básicos
-
-echo -e "$AZUL Comandos básicos de BASH$LIMPIAR"
-
-source ./info.sh
-Xinfo
-
-source ./grep.sh
+	source ./grep.sh
 Xgrep
-
+elif [ $1 -eq "info"]; then
 source ./comprimir.sh
 Xcomprimir
-
+elif [ $1 -eq "info"]; then
 source ./red.sh
 Xred
-
+elif [ $1 -eq "info"]; then
 source ./buscar.sh
 Xfind
-
+elif [ $1 -eq "info"]; then
 source ./formatear.sh
 Xformatear
-
+elif [ $1 -eq "info"]; then
 source ./usuarios.sh
 Xusuarios
-
+elif [ $1 -eq "info"]; then
 source ./cron.sh
 Xcron
-
+elif [ $1 -eq "info"]; then
 source ./otros.sh
 Xotros
+else
+	Xayuda
+fi
 
 echo ""
 echo ""
