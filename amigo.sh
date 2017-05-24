@@ -335,7 +335,7 @@ echo -e '
 
 '
 
-
+source ./cron.sh
 Xcron
 
 
