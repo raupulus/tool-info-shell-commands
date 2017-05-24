@@ -1,8 +1,8 @@
 [Desktop Entry]
-Name=Root Terminal
-Name[es]=Terminal de «Root»
-Comment=Opens a terminal as the root user, using gksu to ask for the password
-Comment[es]=Abre un terminal como el usuario «root» utilizando gksu para preguntar la contraseña.
+Name=Información Comandos
+Name[es]=Información Comandos
+Comment=Programa que ofrece ayuda sobre comandos
+Comment[es]=Programa que ofrece ayuda sobre comandos
 Exec=sh /usr/bin/amigo
 Icon=amigo
 StartupNotify=true
